@@ -37,7 +37,7 @@ public class PalindromeList {
         node.next = prev;
         //print(node);
 
-        //checl for palindrome
+        //check for palindrome
         ListNode temp = head;
         while(node != null){
             if(node.val == temp.val) {
