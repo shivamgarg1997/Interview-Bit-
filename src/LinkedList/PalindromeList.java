@@ -12,10 +12,12 @@ public class PalindromeList {
     public static void main(String[] args) {
         ListNode node = new ListNode(1);
         node.next = new ListNode(2);
-        node.next.next = new ListNode(21);
+        node.next.next = new ListNode(2);
         node.next.next.next = new ListNode(1);
         System.out.println(new PalindromeList().lPalin(node));
+        //System.out.println(new PalindromeList().reverseBetween(node,2,5));
     }
+
     public int lPalin(ListNode head) {
         if(head == null) return 0;
         if(head.next == null) return 1;
