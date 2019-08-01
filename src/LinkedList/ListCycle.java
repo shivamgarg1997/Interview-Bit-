@@ -31,6 +31,5 @@ public class ListCycle {
             fast = fast.next;
         }
         return slow;
-        //return slow.next;
     }
 }

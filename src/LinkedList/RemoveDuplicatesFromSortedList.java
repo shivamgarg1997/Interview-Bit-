@@ -12,7 +12,7 @@ public class RemoveDuplicatesFromSortedList {
         ListNode node = A,prev;
         while(node!=null){
             if(node.next!=null){
-                while(node.val == node.next.val && node.next!=null){
+                while(node.next!=null && node.val == node.next.val){
                     prev = node;
                     node = node.next;
                     prev.next = node.next;
